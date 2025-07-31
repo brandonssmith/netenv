@@ -9,7 +9,7 @@ A command-line tool to upload environment variables from `.env` files to Netlify
 - 🔍 Find projects by name (case-insensitive)
 - 🔄 Update existing variables or create new ones
 - 🛡️ Dry-run mode to preview changes
-- 🎨 Beautiful CLI interface with progress indicators
+- 🎨 CLI interface with progress indicators
 - 📦 Packaged as a Windows executable
 
 ## Installation
@@ -18,7 +18,7 @@ A command-line tool to upload environment variables from `.env` files to Netlify
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/brandonssmith/netenv
 cd netenv
 ```
 
