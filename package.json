@@ -1,0 +1,41 @@
+{
+  "name": "netenv",
+  "version": "1.0.0",
+  "description": "A command-line tool to upload environment variables from .env files to Netlify",
+  "main": "src/index.js",
+  "bin": {
+    "netenv": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "pkg src/index.js --targets node18-win-x64 --output netenv.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "netlify",
+    "environment",
+    "variables",
+    "cli",
+    "deployment"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "assets": [
+      "src/**/*"
+    ],
+    "targets": ["node18-win-x64"],
+    "scripts": [
+      "src/**/*.js"
+    ]
+  }
+} 
